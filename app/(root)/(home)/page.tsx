@@ -1,3 +1,4 @@
+import MeetingTypeList from "@/components/MeetingTypeList";
 import React from "react";
 
 const Home = () => {
@@ -17,11 +18,15 @@ const Home = () => {
             Upcoming Meeting at {time} PM
           </h2>
           <div className="flex flex-col gap-2">
-            <h1 className="text-4xl font-extrabold lg:text-7xl">{time}</h1>
-            <p className="text-lg font-medium text-sky-1 lg:text-2xl">{date}</p>
+            <h1 className="text-4xl font-extrabold lg:text-7xl">
+              {time.toUpperCase()}
+            </h1>
+            <p className="text-lg font-medium text-sky-1 lg:text-2xl p-2">{date}</p>
           </div>
         </div>
       </div>
+
+      <MeetingTypeList />
     </section>
   );
 };
