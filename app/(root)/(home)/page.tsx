@@ -15,7 +15,7 @@ const Home = () => {
       <div className="h-[300px] rounded-[20px] w-full bg-cover bg-hero">
         <div className="flex h-full flex-col justify-between max-md:px-5 max-md:py-8 md:max-lg:px-5 md:max-lg:py-8 lg:px-10 lg:py-8">
           <h2 className="glassmorphism max-w-[270px] rounded py-2 text-center text-base text-normal">
-            Upcoming Meeting at {time} PM
+            Upcoming Meeting at {time.toUpperCase()}
           </h2>
           <div className="flex flex-col gap-2">
             <h1 className="text-4xl font-extrabold lg:text-7xl">
